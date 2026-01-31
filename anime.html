@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime | PlayMe - Premium Streaming</title>
+    <link rel="icon" type="image/png" href="https://image.tmdb.org/t/p/w500/vB6tS3P2B46S3Ssp9v9I9pYpYpY.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Play<span>Me</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="anime.html" class="active">Anime</a></li>
+                <li><a href="tv-shows.html">TV Shows</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Categories <i class="fas fa-chevron-down"
+                            style="font-size: 0.7rem; margin-left: 5px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="movies.html?genre=28">Action</a>
+                        <a href="movies.html?genre=35">Comedy</a>
+                        <a href="movies.html?genre=27">Horror</a>
+                        <a href="movies.html?genre=10749">Romance</a>
+                        <a href="movies.html?genre=878">Sci-Fi</a>
+                        <a href="movies.html?genre=53">Thriller</a>
+                        <a href="movies.html?genre=18">Drama</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+            <button class="search-btn"><i class="fas fa-user-circle"></i></button>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Categories will be rendered here by JS -->
+    </main>
+
+    <!-- Modal for Movie Details -->
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            <div id="modalDetails" style="display: flex; width: 100%;">
+                <!-- Dynamic content -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 PlayMe. Built by <strong>CalexDev</strong></p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
